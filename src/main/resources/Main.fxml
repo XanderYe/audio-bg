@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.xanderye.controller.MainController">
+   <children>
+      <Button layoutX="266.0" layoutY="75.0" mnemonicParsing="false" onAction="#play" prefHeight="40.0" prefWidth="91.0" text="播放/停止" />
+      <CheckBox fx:id="loopCheckBox" layoutX="58.0" layoutY="75.0" mnemonicParsing="false" onAction="#loop" prefHeight="40.0" prefWidth="97.0" selected="true" text="循环播放" />
+      <Slider fx:id="progressSlider" layoutX="58.0" layoutY="46.0" prefHeight="14.0" prefWidth="207.0" />
+      <Label fx:id="progressLabel" layoutX="266.0" layoutY="41.0" prefHeight="24.0" prefWidth="91.0" text="00:00/00:00" />
+   </children>
+</AnchorPane>
