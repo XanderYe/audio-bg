@@ -55,8 +55,10 @@ public class MainController implements Initializable {
             }
         });
         mediaPlayer.setOnEndOfMedia(() -> {
-            mediaPlayer.stop();
-            play = false;
+            if (!loop) {
+                mediaPlayer.stop();
+                play = false;
+            }
         });
     }
 
