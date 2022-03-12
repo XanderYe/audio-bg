@@ -47,8 +47,7 @@ public class Main extends Application {
         JavaFxWindow.initTray(url, "打开窗口", new MenuItem[]{open, close}, new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                //鼠标左键
-                if (e.getButton() == MouseEvent.BUTTON1) {
+                if (e.getClickCount() == 2) {
                     JavaFxWindow.showStage(primaryStage);
                 }
             }
